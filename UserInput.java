@@ -15,3 +15,19 @@ class UserInput {
         }
         return array;
     }
+
+    // Method to take input for an ArrayList of integers
+    ArrayList<Integer> arrayListInput() {
+        Scanner scan = new Scanner(System.in);
+        ArrayList<Integer> array_list = new ArrayList<>();
+        System.out.println("Enter the size of the ArrayList:");
+        int size = scan.nextInt();
+
+        System.out.println("Enter " + size + " numbers:");
+        // Loop to take input for the ArrayList
+        for (int i = 0; i < size; i++) {
+            array_list.add(scan.nextInt());
+        }
+        return array_list;
+    }
+}
