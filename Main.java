@@ -1,7 +1,15 @@
+// Main.java
+// Name: Vraj Patel
+// PRN: 23070126147
+// Batch: AIML-B3
+
+
 // Main class to execute the program
+import java.util.ArrayList; // importinf arraylist
+
+
 class Main {
     public static void main(String args[]) {
-
         // Create objects for input and operations
         UserInput user_input = new UserInput();
         ArrayFunctions functions = new ArrayFunctions();
