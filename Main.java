@@ -21,3 +21,10 @@ class ArrayFunctions {
                 odd_list.add(array[i]); // Add odd number to the odd list
             }
         }
+
+        // Display the odd and even numbers
+        System.out.println("Odd numbers:");
+        display(odd_list);
+        System.out.println("Even numbers:");
+        display(even_list);
+    }
