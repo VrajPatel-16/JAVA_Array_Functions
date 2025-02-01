@@ -7,3 +7,17 @@ class ArrayFunctions {
     public void display(ArrayList<Integer> array_list) {
         System.out.println("Array is: " + array_list);
     }
+
+    // Method to separate even and odd numbers into respective ArrayLists
+    public void oddEven(int[] array) {
+        ArrayList<Integer> even_list = new ArrayList<>(); // List to store even numbers
+        ArrayList<Integer> odd_list = new ArrayList<>();  // List to store odd numbers
+
+        // classify numbers as even or odd
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 == 0) {
+                even_list.add(array[i]); // Add even number to the even list
+            } else {
+                odd_list.add(array[i]); // Add odd number to the odd list
+            }
+        }
