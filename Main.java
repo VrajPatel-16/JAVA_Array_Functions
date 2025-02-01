@@ -42,7 +42,7 @@ class ArrayFunctions {
         return index; // Return the index of the first number
     }
 
-	// Method to convert an array into an ArrayList
+    // Method to convert an array into an ArrayList
     public ArrayList<Integer> convertArrayToArrayList(int[] array) {
         ArrayList<Integer> array_list = new ArrayList<>();
         for (int num : array) {
@@ -50,3 +50,13 @@ class ArrayFunctions {
         }
         return array_list;
     }
+
+    // Method to convert an ArrayList into an array
+    public int[] convertArrayListToArray(ArrayList<Integer> array_list) {
+        int[] array = new int[array_list.size()];
+        for (int i = 0; i < array_list.size(); i++) {
+            array[i] = array_list.get(i); // Copy elements from the ArrayList to the array
+        }
+        return array;
+    }
+}
